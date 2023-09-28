@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        
+      }
+      .perant{
+        margin: 20px auto;
+        width: 1520px;
+        height: 680px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px 10px,
+      }
+      .perant div{
+        background-color:rgb(224, 224, 224);
+        padding: 20px;
+        font-size: 15px;
+        margin: 5px;
+      }
+      #subc1 {
+        background-color: darkgray;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+      }
+      #subc2{
+        background-color: darkgray;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);  
+      }
+      #subc3{
+        background-color: darkgray;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="perant">
+
+      <div>Item1</div>
+      <div id="subc1">
+        <div>sub 1</div>
+        <div>sub 2</div>
+        <div>sub 3</div>
+        <div>sub 4</div>
+      </div>
+      <div id="subc1" >
+        <div>sub 1</div>
+        <div>sub 2</div>
+        <div>sub 3</div>
+        <div>sub 4</div>
+      </div>
+      <div>Item4</div>
+      <div>Item5</div>
+      <div id="subc2">
+        <div>sub 1</div>
+        <div>sub 2</div>
+      </div>
+      <div  id="subc3">
+        <div>sub 1</div>
+        <div>sub 2</div>
+      </div>
+      <div>Item8</div>
+      <div id="subc1" >
+        <div>sub 1</div>
+        <div>sub 2</div>
+        <div>sub 3</div>
+        <div>sub 4</div>
+      </div>
+      <div>Item10</div>
+      <div>Item11</div>
+      <div id="subc1">
+        <div>sub 1</div>
+        <div>sub 2</div>
+        <div>sub 3</div>
+        <div>sub 4</div>
+      </div>
+
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+      .page{
+        margin: 20px auto;
+        width: 1500px;
+        height: 92vh;
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: 60px auto 140px;
+        grid-template-areas:
+         "nav nav nav nav nav nav nav nav nav nav" 
+         " cont cont cont cont cont cont cont cont side side" 
+         " foot foot foot foot foot foot foot foot foot foot";
+         gap: 15px 15px;
+      }
+       nav{
+        grid-area: nav;
+        background-color: black;
+       }
+       section{
+        grid-area: cont;
+        background-color: orange;
+        
+       }
+       aside{
+        grid-area:side ;
+        background-color: green;
+       }
+       footer{
+        grid-area: foot;
+        background-color:blue;
+       }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav></nav>
+    <section></section>
+    <aside></aside>
+    <footer></footer>
+  </div> 
+</body>
+</html>

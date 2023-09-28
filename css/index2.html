@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #navBar{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* div{
+    border: 1px solid black;
+} */
+#navLinks {
+    margin: 0px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    padding: 25px;
+}
+#shoppingcart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+#searchANDimg {
+    width: 62%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+#search{
+    border: 1px solid gray;
+
+}
+#deppartments{
+width: 30%;
+margin-left:20px ;
+border: 1px solid gray;
+margin-bottom:40px ;
+margin-top: 20px;
+}
+.departmentsDiv {
+    
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+
+}
+
+input{
+    
+        width: 88%;
+        height: 30px;
+        /* padding: 20px; */
+    
+}
+.pLargeSize {
+    font-size: xx-large;
+    margin: 0;
+}
+#hiddenDiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 30px;
+}
+#backImg {
+    background-image: url(banner.jpg);
+    height: -webkit-fill-available;
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    
+}
+button{
+    background-color: aquamarine;
+    max-width: 120px;
+    padding: 10px 20px;
+   
+}
+#shop {
+    width: 100%;
+    margin: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products {
+    max-width: 314px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 305px;
+    min-width: 260px;
+}
+.productname{
+background-color: white;
+font-size: larger;
+padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <div id="navLinks">
+                <div>HOME</div>
+                <div>SHOP</div>
+                <div>PAGES</div>
+                <div>BLOG</div>
+                <div>CONTACT</div>
+            </div>
+            <div id="shoppingcart">
+                <div id="deppartments">
+                    <div style="background-color: aquamarine; padding: 5px;">
+                    All deppartments
+                    </div>
+                    <div class="departmentsDiv">Fresh Meat</div>
+                    <div class="departmentsDiv">Vegetables</div>
+                    <div class="departmentsDiv">Fruit & Nut Gifts</div>
+                    <div class="departmentsDiv">Fresh Berries</div>
+                    <div class="departmentsDiv">Ocean food</div>
+                    <div class="departmentsDiv">Butter & Eggs</div>
+                    <div class="departmentsDiv">Fastfood</div>
+                    <div class="departmentsDiv">Fresh Onion</div>
+                    <div class="departmentsDiv">Papayaya & Crisps</div>
+                    <div class="departmentsDiv">Oatmeal</div>
+                    <div class="departmentsDiv">Fresh Bananas</div>
+                </div>
+                <div id="searchANDimg">
+                    <div id="search">
+                          
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit">SEARCH</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="backImg">
+                        <div id="hiddenDiv">
+                        <p style="color: aquamarine;" >FRUIT FRESH</p>
+                        <p class="pLargeSize">Vegetable </p>
+                        <p class="pLargeSize"> 100% Organic</p>
+                        <p>Free pickup and Delevary available</p>
+                        <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="shop">
+            
+            <div class="products" id="product1">
+                
+                <div class="productname">VEGETABLES</div>
+
+
+
+            </div>
+           
+            <div class="products" id="product2">
+                
+                <div class="productname">DRINK FRUITS</div>
+
+            </div>
+           
+            <div class="products" id="product3">
+
+                <div class="productname">MEAT</div>
+            </div>
+           
+            <div class="products" id="product4">
+                
+                <div class="productname">FRESH FRUIT</div>
+
+            </div>
+           
+
+        </div>
+    </div>
+</body>
+</html>

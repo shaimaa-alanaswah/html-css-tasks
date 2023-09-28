@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+    padding: 5px;
+
+}
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+        
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px; 
+            margin-bottom: 5px;
+        }
+        #subContainerOne{
+            align-items: center;
+            justify-content: center;
+            margin: 20px  ; 
+             background-color : rgb(214, 214, 105);
+             margin-bottom: 1px;
+        }
+    
+        #subContainerTwo{
+            align-items: center;
+            justify-content: center;
+            margin: 20px  ; 
+             background-color : rgb(224, 224, 109);
+             margin-bottom: 1px;
+        }
+        button{
+            
+            margin: 20px  ; 
+            margin-left: 170px;
+
+
+        }
+</style>
+<body>
+    
+    <div id="container">
+                <h1>Registaration Form</h1>
+                <div >
+            <fieldset id="subContainerOne">
+                    <legend>Personal details</legend>
+                    
+                
+                    <div>
+                            <label>First name </label>
+                            <input type="text">
+
+                    </div>
+                    <div>
+                            <label>Last name :</label>
+                            <input type="text">
+                    </div>
+                    
+                    <div>
+                            <label>Email :</label>
+                            <input type="text">
+                    </div>
+                    <div>
+                                    
+                        <label >Gender:</label>
+                    <input type="radio"  name="fav_language" value="Male">
+                    <label>Male</label>
+                    <input type="radio"  name="fav_language" value="Female">
+                    <label>Female</label>
+        </div>
+            </fieldset> 
+            </div>
+                <div >
+                        <fieldset id="subContainerTwo">
+                            
+                            <legend>City:</legend>
+                            
+                            
+                                <label >City</label>
+                                <select aria-placeholder="please select a country"  >
+                                    <option >jordan</option>
+                                    <option >USA</option>
+                                    <option >JG</option>
+                                    <option >HJBJ</option>
+                                </select>
+                            
+                            
+                    </fieldset>
+            </div>
+        <button>submit</button>
+</div>
+
+
+</body>
+</html>

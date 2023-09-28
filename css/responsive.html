@@ -1,0 +1,222 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8" />
+      <title>CSS</title>
+      <style>
+       *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+       } 
+       
+       .page{
+        height: 100vh;
+        display: grid;
+        background-color:white;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: 50px auto ;
+        grid-template-areas:
+        "logo logo logo logo logo logo logo logo nav nav" 
+        " cont cont cont cont cont cont cont cont side side" ;
+        
+       }
+       h2{
+        grid-area: logo;
+        background-color: black;
+        color: white;
+        padding: 10px;
+       }
+       nav{
+        grid-area: nav;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        
+       }
+       nav > a{
+        margin: 25px;
+       }
+       section{
+        grid-area: cont;
+        background-color:white;
+        color:black;
+       margin-top: 10px;
+       }
+       aside{
+        grid-area:side ;
+        background-color:black;
+        color: white;
+        margin: 15px;
+       }
+       aside > p{
+        margin: 20px 20px;
+       }
+       section > div{
+        margin: 10px;
+       }
+       .div1 div{
+        width: 300px;
+        border: 2px solid black;
+        margin: 20px;
+        height: 150px;
+       }
+       .div1{
+        display: flex;
+        margin-top: 20px ;
+        flex-wrap: wrap;
+        
+       }
+       h4{
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        height: 30px;
+       }
+       .div1 p{
+        padding: 10px;
+       }
+        @media screen {
+           *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+       } 
+       
+       .page{
+        height: 100vh;
+        display: grid;
+        background-color:white;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: 50px auto ;
+        grid-template-areas:
+        "logo logo logo logo logo logo logo logo nav nav" 
+        " cont cont cont cont cont cont cont cont side side" ;
+        
+       }
+       h2{
+        grid-area: logo;
+        background-color: black;
+        color: white;
+        padding: 10px;
+       }
+       nav{
+        grid-area: nav;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        
+       }
+       nav > a{
+        margin: 25px;
+       }
+       section{
+        grid-area: cont;
+        background-color:white;
+        color:black;
+       margin-top: 10px;
+       }
+       aside{
+        grid-area:side ;
+        background-color:black;
+        color: white;
+        margin: 15px;
+       }
+       aside > p{
+        margin: 20px 20px;
+       }
+       section > div{
+        margin: 10px;
+       }
+       .div1 div{
+        width: 300px;
+        border: 2px solid black;
+        margin: 20px;
+        height: 150px;
+       }
+       .div1{
+        display: flex;
+        margin-top: 20px ;
+        flex-wrap: wrap;
+        
+       }
+       h4{
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        height: 30px;
+       }
+       .div1 p{
+        padding: 10px;
+       }
+        }
+        @media only screen and (max-width:500px) {
+          .page{
+        height: 100vh;
+        display: grid;
+        background-color:white;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: 50px auto ;
+        grid-template-areas:
+        "logo logo logo logo logo logo logo logo nav nav" 
+        " cont cont cont cont cont cont cont cont cont cont "
+        " side side side side side side side side side side" ;
+        
+       }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="page">
+        <h2>My Website</h2>
+        <nav>
+          <a>Link1</a>
+          <a>Link2</a>
+          <a>Link3</a>
+        </nav>
+        <section>
+         <div><h3>
+            This is the main heading
+          </h3></div>
+         <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis neque totam sed labore adipisci animi dolorum atque fuga, dignissimos eos! Molestiae autem, laborum in nobis expedita enim eos assumenda.
+          </p></div>
+         <div> <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit pariatur nostrum exercitationem voluptatum possimus. Modi dicta maxime, quam, fugiat totam in error sapiente cum distinctio repellendus praesentium blanditiis reprehenderit soluta.
+          </p></div>
+          <div class="div1">
+            <div> 
+              <h4>Carde One</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ullam enim dolorum dicta nihil non facere pariatur eaque beatae delectus voluptatem
+              </p>
+            </div>
+            <div>
+              <h4>Carde Two</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ullam enim dolorum dicta nihil non facere pariatur eaque beatae delectus voluptatem
+              </p>
+            </div>
+            <div>
+              <h4>Carde Three</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ullam enim dolorum dicta nihil non facere pariatur eaque beatae delectus voluptatem
+              </p>
+            </div>
+            <div>
+              <h4>Carde Four</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ullam enim dolorum dicta nihil non facere pariatur eaque beatae delectus voluptatem
+              </p>
+            </div>
+            <div>
+              <h4>Carde Five</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ullam enim dolorum dicta nihil non facere pariatur eaque beatae delectus voluptatem
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <aside>
+          <p>Have you discoverd all the other exellent content on this website?</p>
+        </aside>
+        
+      </div>
+    </body>
+  </html>
