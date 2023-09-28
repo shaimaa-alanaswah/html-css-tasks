@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+.container{
+  height: 280vh;
+  width: 100%;
+}
+header{
+  height: 2.5%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#00ADBC;
+  align-items: center;
+  padding: 10px 10%;
+}
+.logo{
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+
+}
+.nav-links{
+  list-style: none;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+button{
+  background-color: transparent;
+  color: white;
+  padding: 9px 25px;
+  border: 2px solid white;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-top: -6px;
+  border-radius: 5px;
+}
+.nav-links a{
+  text-decoration: none;
+  color: white;
+}
+.logo nav{
+  float: left;
+    margin: 0;
+}
